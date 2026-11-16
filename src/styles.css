@@ -1,0 +1,88 @@
+/* Paste Images — the tray above the field you pasted into. Host theme tokens only. */
+.pi-tray {
+  position: fixed;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: min(640px, calc(100vw - 16px));
+  padding: 10px;
+  border: 1px solid var(--border, #434343);
+  border-radius: 10px;
+  background: var(--card, #1c1c1c);
+  color: var(--foreground, #e6e6e6);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  font-family: "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  font-size: 12.5px;
+}
+
+.pi-tray[hidden] {
+  display: none;
+}
+
+.pi-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pi-chip {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border: 1px solid var(--border, #434343);
+  border-radius: 6px;
+  background: var(--background, #141414);
+}
+
+.pi-chip img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pi-remove {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font: 600 14px/22px system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.pi-remove:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.pi-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--muted-foreground, #8d8d8d);
+}
+
+.pi-clear {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted-foreground, #8d8d8d);
+  font: inherit;
+  cursor: pointer;
+}
+
+.pi-clear:hover {
+  color: var(--foreground, #e6e6e6);
+}
+
+.pi-notice {
+  color: var(--lh-warning, #f59e0b);
+}

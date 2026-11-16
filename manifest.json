@@ -1,0 +1,11 @@
+{
+  "apiVersion": 1,
+  "id": "paste-images",
+  "name": "Paste Images",
+  "version": "0.1.0",
+  "minAppVersion": "0.6.0",
+  "description": "Paste screenshots (Ctrl+V) or drop images into any session field; they are sent to the model with your message.",
+  "author": "Doshhhh",
+  "main": "main.js",
+  "styles": "styles.css"
+}
